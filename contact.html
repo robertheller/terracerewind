@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+        Final Web Project - Contact page
+        Author: Robert Heller 
+        Due date: December 2, 2020
+        -->
+        
+        <meta charset= "utf-8" />
+        <link href="reset_stylesheet.css" rel="stylesheet" />
+        <link href="styles_contact.css" rel="stylesheet" />
+        <script src="site_script.js" defer></script>
+        <title>Terrace Rewind</title>
+    </head>
+    
+    <!-- 2.4.6 e -->
+    <body onload="setInterval('clock()',1000)">
+        <header>
+            <a href="index.html"><img class="logo" src="pictures/logo.png" alt="Terrace Rewind" /></a>
+            <nav>
+                <a href="#" class="navicon"><img src="pictures/navicon.png" /></a>
+                <ul class="navigation">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="services.html"><li>Services</li></a>
+                    <a href="shoptour.html"><li>Shop Tour</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                    <a href="crossreference.html"><li>Cross Ref</li></a>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="mainpage">
+            <h2 class="pageheading">Contact Us</h2>
+            
+            <article class="article1">
+                <h5>Call Terrace Rewind for Motor Rewind and Repair Services</h5>
+                <p>
+                    Thank you for viewing the products and services offered by Terrace Rewind. To request repair or maintenance service, please give us a call at any time. 24-hour emergency services are also available. For general questions and product inquiries, you may also use our convenient online form. We reply to form requests as quickly as possible.
+                </p>
+                <br />
+                <p>
+                    For general questions and product inquiries, you may also use our convenient online form. We reply to form requests as quickly as possible.
+                </p>
+            </article>
+            
+            <article class="article2">
+                <p><b>Address</b></p>
+                <p>3055 River Drive, Terrace, BC V8G 3P6</p>
+                
+                <p><b>Phone</b></p>
+                <p>
+                    Main: 250-635-6108<br />
+                    Toll Free: 1-888-817-8414<br />
+                    Fax: 250-635-9279
+                </p>
+            </article>
+            
+            <article class="article3">
+                <p><b>Business Hours</b></p>
+                <p>
+                    Monday – Friday: 8:00 AM – 4:30 PM<br />
+                    Saturday – Sunday: Closed
+                </p>
+                <!-- 2.4.6 b -->
+                <p id="clock"></p>
+                
+                <p><b>Emergency Services</b></p>
+                <p>24-Hour Emergency Services Available</p>
+            </article>
+            
+            <article class="article4">
+                <p><b>Questions and/or Feedback:</b></p>
+                <!-- 2.4.3 a -->
+                <form id="siteform" onsubmit="checkValid()">
+                    <label for="name">Name*</label><br />
+                    <input id="name" type="text" placeholder="First Name" required/><br />
+                
+                    <label for="mail">Email*</label><br />
+                    <input id="mail" type="email" placeholder="Email Address" required/><br />
+                    
+                    <label for="rating">Rate Us*<br />(1 = Bad; 2 = Okay; 3 = Great)</label><br />
+                    <input id="rating" name="rating" type="text" placeholder="Enter 1, 2, or 3" maxlength="1" required/><br />
+                
+                    <label for="message">Message*</label><br />
+                    <textarea id="message" placeholder="Your message here." required></textarea><br />
+                    
+                    <input type="submit" />
+                </form>
+                <p id="invalid">Required*</p>
+            </article>
+            
+            <article>
+                <p><b>Methods of Payment:</b></p>
+                <img class="animpic" src="pictures/cash.png" />
+                <img class="animpic" src="pictures/cheque.png" />
+            </article>
+        </section>
+
+        <footer>
+            <div>
+                <h5>CALL US</h5>
+                <a href="tel:250-635-6108">Main: 250-635-6108</a>
+                <br />
+                <a href="tel:1-888-817-8414">Toll Free: 1-888-817-8414</a>
+            </div>
+            <div>
+                <h5>VISIT US</h5>
+                <address>
+                    3055 River Drive<br />
+                    Terrace, BC V8G 3P6
+                </address>
+            </div>
+            <div>
+                <h5>OUR HOURS</h5>
+                <p>Mon - Fri: 8am - 4:30pm<br />Sat - Sun: Closed</p>
+            </div>
+        </footer>
+    </body>
+</html>

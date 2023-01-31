@@ -1,0 +1,324 @@
+/* ------------------
+Home page styles
+--------------------*/
+
+/* BODY AND HEADER STYLES */
+
+/* 2.4.2 e.iii */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 960px;
+    min-width: 480px;
+    margin: 0 auto 0 auto;
+    background: #c7c7c7;
+}
+
+/* 2.4.2 a.iii */
+header {
+    width: 100%;
+    height: 170px;
+    background: #121212;
+}
+
+.bg {
+    width: 100%;
+    height: 150px;
+}
+
+/* 2.4.2 g.iii */
+/* 2.4.7 c */
+.logo {
+    float: left;
+    width: 22.5%;
+    min-width: 175px;
+    margin: 40px 0 0 25px;
+}
+
+/* NAVIGATION STYLES */
+
+.navigation {
+    list-style-type: none;
+    padding-top: 55px;
+}
+
+/* 2.4.2 a.ii */
+/* 2.4.2 e.ii */
+/* 2.4.2 e.iv */
+/* 2.4.2 e.v */
+.navigation li {
+    float: left;
+    padding: 8px;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    margin: 10px 0 0 4%;
+    width: 100px;
+    display: block;
+    border: 1px solid white; 
+    border-radius: 2px;
+}
+
+/* 2.4.2 d.i */
+.navigation li:link {
+    background: black;
+    color: white;
+}
+
+/* 2.4.2 d.i */
+.navigation li:visited {
+    background: black;
+    color: white;
+}
+
+/* 2.4.2 d.i */
+.navigation li:hover {
+    background: white;
+    color: black;
+}
+
+/* 2.4.2 d.i */
+.navigation li:active {
+    background: white;
+    color: black;
+}
+
+a.navicon {
+    display: none;
+}
+
+/* SECTION STYLES */
+
+/* 2.4.2 a.iv */
+/* 2.4.2 e.i */
+section#mainpage {
+    float: left;
+    width: 100%;
+    background-image: url("pictures/background.jpg");
+    background-size: 960px;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+}
+
+h2.pageheading {
+    margin: 140px 0 140px 0;
+    color: white;
+    width: 100%;
+    text-shadow: 1px 1px 2px black;
+    font-size: 25px;
+    text-align: center;
+}
+
+article h5 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#mainpage article {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+    text-align: left;
+    float: left;
+    width: 70%;
+    flex-direction: column;
+    padding: 0 10px 10px 10px;
+}
+
+/* 2.4.2 b.i */
+article, aside {
+    line-height: 1.5;
+}
+
+/* ASIDE AND SIDE CONTENT STYLES */
+
+.sidecontent {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+    float: left;
+    width: 30%;
+    background: #121212;
+    color: #c7c7c7;
+    padding: 10px 10px 23px 10px;
+    margin-bottom: 10px;
+}
+
+.sidecontent h5 {
+    padding: 10px 10px 10px 0;
+}
+
+/* 2.4.2 b.ii */
+aside h1 {
+    text-align: center;
+}
+
+/* SPAN AND DROPCAP STYLES */
+
+/* 2.4.2 f */
+/* 2.4.2 h.iv */
+span.dropcap {
+    opacity: 0.9;
+    font-size: 50px;
+    float: left;
+    font-weight: bold;
+    line-height: 42px;
+    padding: 5px 5px 0 0;
+}
+
+/* FOOTER STYLES */
+
+footer {
+    clear: both;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    background: #121212;
+    text-align: center;
+}
+
+/* 2.4.2 b.iii */
+footer > div {
+    float: left;
+    color: #c7c7c7;
+    margin: 10px;
+    padding: 0 30px 0 30px;
+}
+
+footer div:nth-of-type(2) {
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+/* 2.4.2 h.i */
+footer h5 {
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+/* HYPERLINK STYLES */
+
+#mainpage a.reglink:link {
+    color: #4f62d1;
+    text-decoration: none;
+}
+
+#mainpage a.reglink:visited {
+    color: #4f62d1;
+    text-decoration: none;
+}
+
+#mainpage a.reglink:hover {
+    color: white;
+    text-decoration: none;
+}
+
+#mainpage a.reglink:active {
+    background: white;
+    color: black;
+    text-decoration: none;
+}
+
+/* 2.4.5 b.i */
+.calltoaction a {
+    transition: padding 0.3s;
+    font-size: 18px;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    width: 100px;
+    border: 2px solid #121212;
+    border-radius: 3px;
+}
+
+.calltoaction a:link {
+    color: black;
+}
+
+.calltoaction a:visited {
+    color: black;
+}
+
+/* 2.4.5 b.i */
+.calltoaction a:hover {
+    background-color: black;
+    color: white;
+    padding: 17px;
+}
+
+.calltoactionaside a {
+    transition: padding 0.3s;
+    font-size: 18px;
+    padding: 10px;
+    color: #c7c7c7;
+    text-decoration: none;
+    font-weight: bold;
+    width: 100px;
+    border: 2px solid #c7c7c7;
+    border-radius: 3px;
+}
+
+.calltoactionaside a:hover {
+    background-color: #c7c7c7;
+    color: #121212;
+    padding: 17px;
+}
+
+.calltoactionaside {
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+/* 2.4.2 b.v */
+div[class="calltoaction"] {
+    font-weight: bold;
+}
+
+/* 2.4.2 b.vi */
+[class^="call"] {
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+footer a {
+    color: #c7c7c7;
+    text-decoration: none;
+}
+
+/*==============
+Media queries 
+==============*/
+
+@media only screen and (max-width: 640px) {
+    .navigation {
+        display: none;
+    }
+    
+    /* 2.4.7 b */
+    a.navicon {
+        display: inline;
+        position: relative;
+        top: 70px;
+        left: 80px;
+    }
+    
+    /* 2.4.7 b */
+    a.navicon:hover+ul.navigation, nav ul:hover {
+        display: inline-block;
+        position: relative;
+        top: 80px;
+        left: 6px;
+        background: #121212;
+        padding-bottom: 10px;
+        width: 111px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .calltoactionaside {
+        display: none;
+    }
+}

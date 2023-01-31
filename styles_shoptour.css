@@ -1,0 +1,207 @@
+/* ------------------
+Shop Tour page styles
+--------------------*/
+
+/* BODY AND HEADER STYLES */
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 960px;
+    min-width: 480px;
+    margin: 0 auto 0 auto;
+    background: #c7c7c7;
+}
+
+header {
+    width: 100%;
+    height: 170px;
+    background: #121212;
+}
+
+.bg {
+    width: 100%;
+    height: 150px;
+}
+
+.logo {
+    float: left;
+    width: 22.5%;
+    min-width: 175px;
+    margin: 40px 0 0 25px;
+}
+
+/* NAVIGATION STYLES */
+
+.navigation {
+    list-style-type: none;
+    padding-top: 55px;
+}
+
+.navigation li {
+    float: left;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 8px;
+    color: white;
+    text-align: center;
+    margin: 10px 0 0 4%;
+    width: 100px;
+    display: block;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.navigation li:link {
+    background: black;
+    color: white;
+}
+
+.navigation li:visited {
+    background: black;
+    color: white;
+}
+
+.navigation li:hover {
+    background: white;
+    color: black;
+}
+
+.navigation li:active {
+    background: white;
+    color: black;
+}
+
+a.navicon {
+    display: none;
+}
+
+/* SECTION AND DIV STYLES */
+
+/* 2.4.2 g.ii */
+/* 2.4.7 a.ii */
+section#mainpage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    background-image: url("pictures/background3.jpg");
+    background-size: 960px;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+}
+
+h2.pageheading {
+    margin: 140px 0 140px 0;
+    color: white;
+    width: 100%;
+    text-shadow: 1px 1px 2px black;
+    font-size: 50px;
+    text-align: center;
+}
+
+#mainpage img {
+    height: 200px;
+    width: 250px;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+/* 2.4.2 h.ii */
+#mainpage div {
+    box-shadow: 5px 5px gray;
+    text-align: center;
+    width: 250px;
+    margin: 10px 20px 10px 20px;
+    background: #121212;
+    color: #c7c7c7;
+    border: 1px solid black;
+}
+
+#mainpage div p {
+    padding: 5px;
+    line-height: 1.2;
+}
+
+#mainpage div li {
+    padding: 5px;
+}
+
+/* TABLE STYLES */
+
+/* 2.4.2 a.v */
+table {
+    margin: 20px auto 30px auto;
+    border-collapse: collapse;
+    box-shadow: 5px 5px gray;
+}
+
+/* 2.4.2 a.v */
+td {
+    text-align: center;
+    border: 2px solid black;
+    padding: 5px;
+    background-color: white;
+}
+
+/* FOOTER STYLES */
+
+footer {
+    clear: both;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    background: #121212;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer div {
+    float: left;
+    color: #c7c7c7;
+    margin: 10px;
+    padding: 0 30px 0 30px;
+}
+
+footer div:nth-of-type(2) {
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+footer h5 {
+    padding: 5px;
+}
+
+/* HYPERLINK STYLES */
+
+footer a {
+    color: #c7c7c7;
+    text-decoration: none;
+}
+
+/*==============
+Media queries 
+==============*/
+
+@media only screen and (max-width: 640px) {
+    .navigation {
+        display: none;
+    }
+    
+    a.navicon {
+        display: inline;
+        position: relative;
+        top: 70px;
+        left: 80px;
+    }
+    
+    a.navicon:hover+ul.navigation, nav ul:hover {
+        display: inline-block;
+        position: relative;
+        top: 80px;
+        left: 6px;
+        background: #121212;
+        padding-bottom: 10px;
+        width: 111px;
+    }
+}
